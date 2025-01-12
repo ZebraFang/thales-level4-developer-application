@@ -159,3 +159,147 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
+/* Hero section */
+
+/* Hero section */
+/* Hero section */
+.hero-section {
+    background-image: url("./img/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--background-colour);
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark overlay with reduced opacity */
+    border-radius: 15px;
+    /* Rounded corners */
+    color: var(--background-colour);
+    /* White text for readability */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for depth */
+}
+
+#main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#second-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--background-colour);
+    /* White background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow on hover */
+}
+
+/* Mobile Styles for Hero Section */
+@media (max-width: 768px) {
+    #main-title {
+        font-size: 2rem;
+    }
+
+    #second-heading {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icons a img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+    display: inline-block;
+    background-color: var(--accent-colour-links);
+    /* Accent color for button */
+    color: var(--background-colour);
+    /* White text */
+    padding: 0.8rem 2rem;
+    /* Adds padding for a neat look */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 25px;
+    /* Rounded edges */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    margin-top: 2rem;
+    /* Spacing above the button */
+}
+
+.cta-btn:hover {
+    background-color: var(--accent-colour-light);
+    /* Lighter accent color on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}
+
+/* Mobile Responsiveness for Button */
+@media (max-width: 768px) {
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
