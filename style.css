@@ -19,19 +19,31 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Body Styles */
 body {
+    padding-top: 60px;
     font-family: var(--primary-font);
     background-color: var(--background-colour);
     color: var(--primary-colour);
 }
 
 /* Navbar Styles */
+
+
 #nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Ensure it spans the full width */
+    z-index: 1000;
+    /* Keep it above other elements */
     background-color: var(--primary-colour);
-    color: var(--background-colour);
-    position: relative;
-    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -127,9 +139,11 @@ body {
 
     .nav-select {
         position: fixed;
-        top: 0;
+        top: 70px;
+
         right: -100%;
-        height: 100vh;
+        height: calc(100vh - 70px);
+
         width: 60%;
         background-color: var(--primary-colour);
         flex-direction: column;
