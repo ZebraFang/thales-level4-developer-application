@@ -63,6 +63,9 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
   emailjs.send(serviceID, templateID, params)
     .then(() => {
       alert("Message sent successfully!");
+
+      // Clear the form fields after successful submission
+      document.getElementById("contact-form").reset();
     })
     .catch((error) => {
       console.error("Failed to send email:", error);
