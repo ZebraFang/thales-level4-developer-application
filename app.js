@@ -44,9 +44,6 @@ document.addEventListener("DOMContentLoaded", fetchWeather);
 
 
 // Email form
-// Initialize EmailJS with public key
-emailjs.init("-4BHTJiuk5b6ZgdQn");
-
 // Add event listener to the form
 document.getElementById("contact-form").addEventListener("submit", function (e) {
   e.preventDefault(); // Prevent page reload
